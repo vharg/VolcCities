@@ -10,17 +10,17 @@ library(tidyr)
 library(terra)
 library(writexl)
 
-# Set your working directory
-setwd("C:/Users/MeredithES/OneDrive - University of Twente/Documents/Cities/R_Code_Cities/Github/Cities")
+#Set your working directory
+setwd("VolcCities")
 
 #1. NAMING POLYGONS
 
 #Insert your data
-city_polygons_path <- "Data/GHS_UCDB_MTUC_GLOBE_2020.shp" #city polygons globally
-buffers_path <- "Data/Geodesic_buffers/100km.shp" #100km geodesic buffers around Holocene volcanoes
-centroids_path <- "Data/centroids_GHS.shp" #Names from GHS 2025
-gadm_path <- "Data/gadm.shp" #DUC dataset for missing names
-countries_path <- "Data/ne_10m_admin_0_countries.shp" #Natural Earth countries and subregions
+city_polygons_path <- "Data/GHS_UCDB_MTUC_GLOBE_2020.shp" #city polygons globally - this one you will need to download from GHS-UCDB R2024 (year 2020)
+buffers_path <- "Data/Geodesic_buffers/100km.shp" #100km geodesic buffers around Holocene volcanoes provided
+centroids_path <- "Data/centroids_GHS.shp" #Names from GHS 2025 provided
+gadm_path <- "Data/gadm.shp" #DUC dataset for missing names - this one you will need to download from GHS-DUC R2023
+countries_path <- "Data/ne_10m_admin_0_countries.shp" #Natural Earth countries and subregions provided
 
 
 #Load data
